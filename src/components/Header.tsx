@@ -6,7 +6,7 @@ export function Header() {
   return (
     <header className="flex items-center justify-between">
       <div className="flex items-center gap-5">
-        <Link href="/" className="text-2xl font-extrabold text-white">
+        <Link href="/search" className="text-2xl font-extrabold text-white">
           Dev Store
         </Link>
         <form className="flex w-[320px] items-center gap-3 rounded-full bg-zinc-900 px-5 py-3 ring-zinc-700">
