@@ -20,6 +20,7 @@ async function getProduct(slug: string): Promise<Product> {
 
   return products;
 }
+
 export async function generateMetadata({
   params,
 }: ProductProps): Promise<Metadata> {
@@ -27,6 +28,10 @@ export async function generateMetadata({
   return {
     title: product.title,
   };
+}
+
+export function generateStaticParams() {
+  return [{ slug: "moletom-never-stop-learning" }];
 }
 
 export default async function ProductPage({ params }: ProductProps) {
